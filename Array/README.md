@@ -1,0 +1,3 @@
+# A custimized Dynamic Array
+
+
