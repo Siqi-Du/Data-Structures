@@ -1,6 +1,7 @@
 # Data-Structures
 implement some data structures in java
 
+https://github.com/Siqi-Du/Play-with-Data-Structures
 normal speed +up 20h
 1. intro 0.5
 2. 数组: 2h
@@ -15,7 +16,7 @@ normal speed +up 20h
 11. 哈希表 1.5h
 
 
-alg: 17h 50T
+alg: 17h 50T https://github.com/Siqi-Du/Play-with-Algorithm-Interview
 1. 1h
 2. 复杂度 1.5h
 3. 数组 1.5h
