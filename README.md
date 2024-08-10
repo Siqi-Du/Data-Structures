@@ -1,7 +1,7 @@
 # Data-Structures
 implement some data structures in java
 
-normal speed +up 19h
+normal speed +up 20h
 1. intro 0.5
 2. 数组: 2h
 -> 3. stack/queue 2h
@@ -12,6 +12,7 @@ normal speed +up 19h
 8. 优先队列和堆 2.5h
 9. 线段树 2h
 10. trie 1.5h
+11. 哈希表 1.5h
 
 
 alg: 17h
