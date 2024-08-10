@@ -5,7 +5,7 @@ public class BinarySearch {
     //二分查找原数组有序
     public static int BinarySearch(Comparable[] arr, int n, Comparable target){
 
-        //在[l...r]中查找target
+        //在[l...r]中查找target // 循环不变量
         int l = 0;
         int r = n -1 ;
 
