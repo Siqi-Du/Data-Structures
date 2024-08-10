@@ -21,7 +21,8 @@ public class Main {
 
 
         // 用自己build的array:
-        Array newArr = new Array(20);
+        // 因为用了E泛型 所以需要声明Array存放Integer(int的封装型)
+        Array<Integer> newArr = new Array<>(20);
         for(int i = 0; i < 10; i++){
             newArr.appendLast(i);
         }

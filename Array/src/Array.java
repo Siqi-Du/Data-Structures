@@ -5,7 +5,7 @@ public class Array<E> {
 
     public Array(){this(10);}
     public Array(int capacity){
-        data = (E[])new Object[capacity];
+        data = (E[])new Object[capacity]; // need to initiate an Object[] and cast to E[]
         size = 0;
     }
 
@@ -30,6 +30,9 @@ public class Array<E> {
         size ++ ;
     }
     // append -> add(size,e) , addFirst -> add(0,e);
+    // 分析: O(n)
+    // 均摊时间复杂度-> assume capacity=n, n+次addLast触法resize，共2n+1次/n ～2
+    // 平均addLst -> O(1)
     public void appendLast(E e){
 //        if(size == data.length)
 //            throw new IllegalArgumentException("append failed, Array is full")
@@ -55,12 +58,14 @@ public class Array<E> {
         data[size] = null;
 
         //动态缩容 --> lazy (size == capacity/4)
+        // 为什么不是/2 -> 这样会频繁扩容/所容 -> lazy
         if(size == data.length /4 && data.length/2 != 0)
-            resize(data.length /2);
+            resize(data.length /2); // length/2 不能=0
 
         return ret;
     }
-    
+
+    // 动态数组
     private void resize(int newCapacity){
         E[] newData = (E[])new Object[newCapacity];
         for(int i=0; i<size; i++)
